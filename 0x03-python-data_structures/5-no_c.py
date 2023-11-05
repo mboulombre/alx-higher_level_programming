@@ -1,7 +1,6 @@
-#!/usr/bin/python3
-
 def no_c(my_string):
-    if my_string:
-        new_string = my_string.lower()
-        let = new_string.removeprefix('c')
-    return let
+    new_string = ""
+    for elements in my_string:
+        if elements != "c" and elements != "C":
+            new_string += elements
+    return new_string
